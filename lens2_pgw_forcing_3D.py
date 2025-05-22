@@ -21,12 +21,13 @@ import glob
 import xarray as xr
 
 
-# ### set path to monthly data
+# ### set path to monthly data and export dir
 
 # In[2]:
 
 
 cesm_dir= '/glade/campaign/cgd/cesm/CESM2-LE/timeseries/atm/proc/tseries/month_1/'
+outdir = ''
 
 
 # ### 3D variables
@@ -253,12 +254,12 @@ print('variables computed')
 # In[ ]:
 
 
-delta_t_mean_ar.to_netcdf('/glade/scratch/doughert/CESM/LENS2/LENS2-Sept_2070-2100_1991-2021_delta_T.nc', compute=False)
-delta_u_mean_ar.to_netcdf('/glade/scratch/doughert/CESM/LENS2/LENS2-Sept_2070-2100_1991-2021_delta_U.nc', compute=False)
-delta_v_mean_ar.to_netcdf('/glade/scratch/doughert/CESM/LENS2/LENS2-Sept_2070-2100_1991-2021_delta_V.nc', compute=False)
-delta_z_mean_ar.to_netcdf('/glade/scratch/doughert/CESM/LENS2/LENS2-Sept_2070-2100_1991-2021_delta_Z.nc', compute=False)
-delta_q_mean_ar.to_netcdf('/glade/scratch/doughert/CESM/LENS2/LENS2-Sept_2070-2100_1991-2021_delta_Q.nc', compute=False)
-delta_rh_mean_ar.to_netcdf('/glade/scratch/doughert/CESM/LENS2/LENS2-Sept_2070-2100_1991-2021_delta_RH.nc', compute=False)
+delta_t_mean_ar.to_netcdf(outdir+'LENS2-Sept_2070-2100_1991-2021_delta_T.nc', compute=False)
+delta_u_mean_ar.to_netcdf(outdir+'LENS2-Sept_2070-2100_1991-2021_delta_U.nc', compute=False)
+delta_v_mean_ar.to_netcdf(outdir+'LENS2-Sept_2070-2100_1991-2021_delta_V.nc', compute=False)
+delta_z_mean_ar.to_netcdf(outdir+'LENS2-Sept_2070-2100_1991-2021_delta_Z.nc', compute=False)
+delta_q_mean_ar.to_netcdf(outdir+'LENS2-Sept_2070-2100_1991-2021_delta_Q.nc', compute=False)
+delta_rh_mean_ar.to_netcdf(outdir+'LENS2-Sept_2070-2100_1991-2021_delta_RH.nc', compute=False)
 
 
 # In[ ]:
