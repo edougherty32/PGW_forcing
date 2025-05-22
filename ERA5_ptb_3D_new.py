@@ -18,7 +18,7 @@ import xarray as xr
 yr_mo = '200609'
 days = ['05', '06', '07','08', '09', '10', '11', '12', '13']
 #days = ['08', '09', '10', '11', '12', '13']
-export_dir = '/glade/derecho/scratch/doughert/ERA5_perturb/200609/3d/test/'
+export_dir = '/'
 
 #### var list from CESM delta outputs - DON'T CHANGE BELOW HERE
 var_list = ['T', 'U',  'V', 'Z3', 'RELHUM', ]
