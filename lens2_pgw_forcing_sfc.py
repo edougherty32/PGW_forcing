@@ -30,7 +30,7 @@ llon = -74
 rlon = 70
 
 ### change where you will output the data
-outdir = '/glade/scratch/doughert/CESM/LENS2/'
+outdir = '/'
 
 ######## DON'T CHANGE BELOW HERE ########
 
