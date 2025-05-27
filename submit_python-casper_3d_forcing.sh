@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #PBS -N get_delta_3d
-#PBS -A P48500028
-#PBS -l select=1:ncpus=2
+#PBS -A 
+#PBS -l select=1:ncpus=2:mem=200GB
 #PBS -l walltime=24:00:00
 #PBS -q casper
 #PBS -j oe                    
