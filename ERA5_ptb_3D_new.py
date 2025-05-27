@@ -105,7 +105,6 @@ def fmt_files(var, pid):
 ### this routine opens delta from LENS2, opens ERA5 for same variable, interpolates ERA5 and CESM to match
 ### then adds delta to ERA5, and export file with perturbed variables
 
-%%time
 import pyresample
 
 for i in range(len(var_list)):
