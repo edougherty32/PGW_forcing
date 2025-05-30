@@ -1,0 +1,5 @@
+name: npl
+channels:
+  - conda-forge
+  - defaults
+prefix: /glade/u/home/doughert/miniconda3/envs/npl
