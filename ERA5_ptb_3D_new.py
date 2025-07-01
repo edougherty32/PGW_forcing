@@ -17,8 +17,8 @@ import xarray as xr
 ### change year, month, day as well as export path
 yr_mo = '201709'
 days = ['15', '16', '17','18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29','30',]
-export_dir = '/glade/derecho/scratch/doughert/ERA5_perturb/201709/3d/'
-input_dir = '/glade/derecho/scratch/doughert/SOARS/'
+export_dir = '/'
+input_dir = '/'
 
 #### var list from CESM delta outputs - DON'T CHANGE BELOW HERE
 var_list = ['T', 'U',  'V', 'Z3', 'RELHUM', ]
