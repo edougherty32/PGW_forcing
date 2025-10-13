@@ -1,28 +1,23 @@
 This set of scripts generate PGW forcing from the ensemble mean of LENS2 that is added to ERA5 reanalysis data. It is assumed that you have already downloaded ERA5 data on pressure levels. The final output are the perturbed ERA5 files output in the format needed to run WRF/MPAS. 
 
 Please run the scripts in the following order:
-1. Edit lens2_pgw_forcing_3D.py
+1. Edit + run lens2_pgw_forcing_3D.ipynb
 - This script takes the monthly mean difference between a historical and future period from the ensemble mean of LENS2 for 3D variables
 - Change historical period, future period, and month of difference, and bounds for domain
 - Exports netcdfs of all variables
 
-2. > qsub submit_python-casper_3d_forcing.sh
-- This runs lens2_pgw_forcing_3D.py
-
-3. Edit lens2_pgw_forcing_sfc.py
+2. Edit + run lens2_pgw_forcing_sfc.ipynb
 - Same as above, but for 2D variables
 
-4. > qsub submit_python-casper_sfc_forcing.sh
-- This runs lens2_pgw_forcing_sfc.py
-
-5. Edit + run ERA5_perturb_sfc_new.ipynb
+3. Edit + run ERA5_perturb_sfc_new.ipynb
 - This script perturbs the ERA5 files with the PGW forcing and outputs modified ERA5 file to run MPAS
 horizontally reproject LENS2 to ERA5 
 
-6. Edit ERA5_perturb_3D_new.py
+4. Edit ERA5_perturb_3D_new.py
 - This script perturbs the ERA5 files with the PGW forcing and outputs modified ERA5 file to run MPAS
 - Vertically interpolate LENS2 to ERA5 and horizontally reproject LENS2 to ERA5 
 
-7. > qsub submit_python-casper_ptb_3D.sh
+5. > qsub submit_python-casper_ptb_3D.sh
 - Need to submit this via job because it much more memory intensive
+
 
