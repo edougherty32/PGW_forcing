@@ -12,17 +12,20 @@
 
 **3. Edit + run ERA5_perturb_sfc_new.ipynb**
 - This script perturbs the ERA5 files with the PGW forcing and outputs modified ERA5 file to run MPAS
-horizontally reproject LENS2 to ERA5 
+horizontally reproject LENS2 to ERA5
+- Only use the files output ending in *pid.grb and *zaxis1.grb (for soil files only) for your final forcing. 
 
 **4. Edit ERA5_perturb_3D_new.py**
 - This script perturbs the ERA5 files with the PGW forcing and outputs modified ERA5 file to run MPAS
-- Vertically interpolate LENS2 to ERA5 and horizontally reproject LENS2 to ERA5 
+- Vertically interpolate LENS2 to ERA5 and horizontally reproject LENS2 to ERA5
+- Only use the files output ending in *dtype.grb for your final forcing. 
 
 **5. > qsub submit_python-casper_ptb_3D.sh**
-- Need to submit this via job because it much more memory intensive
+- Need to submit this via a job because it much more memory intensive
 
 ## Please cite Dougherty et al. (2023) if you use this code in your project
 https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022JD037537
+
 
 
 
