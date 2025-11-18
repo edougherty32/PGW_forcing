@@ -94,7 +94,7 @@ def fmt_files(var, pid):
 
     ## change dtype to P16
     substr = 'pid'
-    add_str3 = 'dtype'
+    add_str3 = 'final'
     
     for file in sorted(glob.glob(export_dir+'era5.pl.'+var+'.*pid*.grb')):
         stridx = file.index(substr)
